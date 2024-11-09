@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-08T13:09:00 GMT-05:00" name="Default suite" finished-at="2024-11-08T13:09:42 GMT-05:00" duration-ms="42303">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.pages.runners.SimpleRunner@5d0bf09b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-11-08T13:09:00 GMT-05:00" name="Default test" finished-at="2024-11-08T13:09:42 GMT-05:00" duration-ms="42303">
+      <class name="com.automation.pages.runners.SimpleRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.automation.pages.runners.SimpleRunner@5d0bf09b]" started-at="2024-11-08T13:09:00 GMT-05:00" name="setUpClass" finished-at="2024-11-08T13:09:01 GMT-05:00" duration-ms="1052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5edc3e29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.pages.runners.SimpleRunner@5d0bf09b]" started-at="2024-11-08T13:09:01 GMT-05:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-08T13:09:27 GMT-05:00" duration-ms="26198" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Succesfull login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["implementing login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at com.automation.stepDefinitions.FirebaseStepDefinition.i_should_be_able_to_see_homepage(FirebaseStepDefinition.java:140)
+at ✽.i should be able to see homepage(file:///C:/Users/arasu/eclipse-workspace/SeleniumFrameworkPOMCucumber/src/test/resources/features/firebase2.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.pages.runners.SimpleRunner@5d0bf09b]" started-at="2024-11-08T13:09:27 GMT-05:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-08T13:09:42 GMT-05:00" duration-ms="14872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["unSuccesfull login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["implementing login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.automation.pages.runners.SimpleRunner@5d0bf09b]" started-at="2024-11-08T13:09:42 GMT-05:00" name="tearDownClass" finished-at="2024-11-08T13:09:42 GMT-05:00" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.automation.pages.runners.SimpleRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
