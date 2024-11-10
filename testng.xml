@@ -6,7 +6,8 @@
     </listeners>
   <test  name="Test">
     <classes>
-      <class name="com.automation.runners.SimpleRunner"/>
+      <class name="com.automation.runners.SimpleRunner"></class>
+      <class name=""></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
